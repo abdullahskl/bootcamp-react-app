@@ -39,6 +39,6 @@ jobs:
         run: npm install --g surge
         
       - name: deploying surge
-        run: surge ./build http://floor.surge.sh/ --token $ "32cb2c5bed7b9acd984870244e211b82"
+        run: surge ./build http://floor.surge.sh/ --token $ {{ secrets.SURT }}
         
   
